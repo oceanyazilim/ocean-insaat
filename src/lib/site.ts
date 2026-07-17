@@ -13,9 +13,9 @@ export const siteConfig = {
     light: '/assets/logo/OCEAN-WHITE-TRANSPARENT-LOGO.svg',
   },
   contact: {
-    phoneDisplay: '+90 552 526 91 76',
-    phoneHref: 'tel:+905525269176',
-    whatsappNumber: '905525269176',
+    phoneDisplay: '+90 532 766 06 83',
+    phoneHref: 'tel:+905327660683',
+    whatsappNumber: '905327660683',
     whatsappMessage:
       'Merhaba Ocean İnşaat, projem hakkında bilgi ve teklif almak istiyorum.',
     email: 'info@oceaninsaat.com.tr',
