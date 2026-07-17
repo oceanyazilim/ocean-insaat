@@ -1,0 +1,62 @@
+import {
+  Building2,
+  Home,
+  Warehouse,
+  Factory,
+  Layers,
+  Thermometer,
+  Droplets,
+  Volume2,
+  Triangle,
+  HardHat,
+  Ruler,
+  Brush,
+  Plug,
+  Wrench,
+  Pipette,
+  Square,
+  Trees,
+  Shovel,
+  Compass,
+  Shield,
+  RefreshCw,
+  Store,
+  Hotel,
+  Briefcase,
+  Cog,
+} from 'lucide-react';
+import type { Service } from '@/data/services';
+
+const map: Record<Service['icon'], typeof Building2> = {
+  building: Building2,
+  home: Home,
+  warehouse: Warehouse,
+  factory: Factory,
+  layers: Layers,
+  thermometer: Thermometer,
+  droplets: Droplets,
+  volume: Volume2,
+  triangle: Triangle,
+  hardhat: HardHat,
+  brick: Cog,
+  iron: HardHat,
+  paint: Brush,
+  plug: Plug,
+  wrench: Wrench,
+  pipette: Pipette,
+  square: Square,
+  trees: Trees,
+  shovel: Shovel,
+  compass: Compass,
+  shield: Shield,
+  refresh: RefreshCw,
+  ruler: Ruler,
+  store: Store,
+  hotel: Hotel,
+  office: Briefcase,
+};
+
+export function ServiceIcon({ icon, className }: { icon: Service['icon']; className?: string }) {
+  const Icon = map[icon] ?? Building2;
+  return <Icon className={className ?? 'h-6 w-6'} strokeWidth={1.4} />;
+}
